@@ -168,12 +168,12 @@
 
 .hero {
   position: relative;
-  min-height: 94svh;
+  min-height: 90svh;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
-  align-items: end;
+  align-items: center;
   gap: 28px;
-  padding: 160px clamp(20px, 5vw, 78px) 42px;
+  padding: 138px clamp(20px, 5vw, 78px) 54px;
 }
 
 .hero-media {
@@ -237,8 +237,8 @@
   max-width: 990px;
   margin: 0;
   color: #090806;
-  font-size: clamp(4.6rem, 15vw, 13rem);
-  line-height: 0.78;
+  font-size: clamp(4.6rem, 12.2vw, 9.8rem);
+  line-height: 0.82;
   font-weight: 950;
 }
 
@@ -272,7 +272,7 @@
 
 .hero-panel {
   position: relative;
-  align-self: end;
+  align-self: center;
   padding: 22px;
   border: 1px solid rgba(17, 16, 13, 0.14);
   border-radius: 8px;
@@ -552,7 +552,7 @@ button:focus-visible {
 
   .hero {
     grid-template-columns: 1fr;
-    min-height: 94svh;
+    min-height: 92svh;
     padding-top: 132px;
   }
 

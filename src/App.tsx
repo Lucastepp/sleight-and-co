@@ -42,13 +42,13 @@ const ventures = [
   {
     icon: Gem,
     label: 'Beauty',
-    name: 'Beauty House',
-    text: 'A placeholder vertical for wellness, aesthetic, and lifestyle brands still to be named.',
+    name: 'Sleight Beauty',
+    text: 'A beauty and lifestyle vertical for aesthetic brands, wellness offers, and future product houses.',
   },
   {
     icon: MonitorCog,
     label: 'Technology',
-    name: 'Sleight Systems',
+    name: 'Human Forge Systems',
     text: 'Websites, automations, and internal tools that make the commercial engine easier to run.',
   },
   {
@@ -63,6 +63,13 @@ const proofLines = [
   'Strategy before surface',
   'Brand before template',
   'Systems before noise',
+]
+
+const footerLinks = [
+  'Blue Lagoon',
+  'Sleight Beauty',
+  'Beauty House',
+  'Human Forge Systems',
 ]
 
 function App() {
@@ -133,7 +140,8 @@ function App() {
 
       <section className="hero" id="top">
         <div className="hero-media" aria-hidden="true">
-          <img src={mark} alt="" />
+          <div className="hero-glass" />
+          <div className="hero-ribbon" />
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
         </div>
@@ -161,7 +169,8 @@ function App() {
         </div>
 
         <aside className="hero-panel" aria-label="Sleight operating focus">
-          <p>Operating focus</p>
+          <span>Group architecture</span>
+          <strong>Brands, systems, and demand engines under one roof.</strong>
           <ul>
             {proofLines.map((line) => (
               <li key={line}>
@@ -274,6 +283,27 @@ function App() {
           <ArrowRight aria-hidden="true" size={18} />
         </a>
       </section>
+
+      <footer className="site-footer">
+        <div className="footer-brand">
+          <div>
+            <p>Sleight & Co.</p>
+            <span>Group</span>
+          </div>
+          <img src={mark} alt="" aria-hidden="true" />
+        </div>
+        <nav aria-label="Sleight group companies">
+          {footerLinks.map((link) => (
+            <a href="#group" key={link}>
+              {link}
+            </a>
+          ))}
+        </nav>
+        <div className="footer-note">
+          <p>Marketing, technology, and venture work shaped around the business behind it.</p>
+          <span>Concept site. Production details pending confirmation.</span>
+        </div>
+      </footer>
     </main>
   )
 }
